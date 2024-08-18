@@ -1,4 +1,4 @@
-# A-Algorithm
+# AStar-Algorithm
 A* Algorithm visualizer written in c++ 
 
 ![image](https://github.com/user-attachments/assets/394fb0f0-a89c-4e1e-8c5e-cd56792e29c5)
