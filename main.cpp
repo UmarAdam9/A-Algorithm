@@ -9,6 +9,8 @@
 
 using namespace std;
 
+//=======================All the drawing related code========================================================//
+
 int screenwidth;
 int screenheight;
 HANDLE hconsole=GetStdHandle(STD_OUTPUT_HANDLE); //creates a handle to the window and as parameter i've given it the standard output handle
@@ -41,10 +43,6 @@ rectwindow={0,0,(short)screenwidth-1,(short)screenheight-1};
 SetConsoleWindowInfo(hconsole,true,&rectwindow); //why true here? pointers used be aware
 screenbuffer=new CHAR_INFO[screenwidth*screenheight]; //an array of CHAR_INFO struct {still dont fully understand the new keyword
 memset(screenbuffer,0,sizeof(CHAR_INFO)*screenwidth*screenheight);// this sets the memory bytes of screenbuffer to zero (all the bytes that encompass the area of the buffer)
-
-
-
-
 
 
 return 1; //The function has to return true
@@ -275,6 +273,7 @@ return e;
 }
 
 
+//===========================================A* Algorithm code starts here================================//
 
 struct Node{
 
